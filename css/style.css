@@ -127,3 +127,13 @@ img {
 /************************************************
     SOLUZIONE RESPONSIVE
  ************************************************/
+
+
+ @media screen and (min-width: 480px){
+    .col {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+ }
+
