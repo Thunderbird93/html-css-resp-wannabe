@@ -129,11 +129,44 @@ img {
  ************************************************/
 
 
- @media screen and (min-width: 480px){
-    .col {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+ @media screen and (max-width:1100px){
+    .container{
+        width: 100%;
     }
+ }
+
+ @media screen and (max-width: 480px){
+    
+    .row{
+        flex-direction: column;
+    }
+
+   
+    .lessons .col,
+    .steps .col,
+    .why-us .col{
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    .lessons .col:last-child,
+    .steps .col:last-child,
+    .why-us .col:last-child{
+        margin-bottom: 0;
+    }
+
+   
+    .steps{
+        margin-bottom: 0;
+    }
+
+    
+    .why-us{
+        padding: 3rem 0;
+        background-color: #222222;
+        margin-bottom: 0;
+    }
+
+    
  }
 
